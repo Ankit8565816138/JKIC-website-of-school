@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% include 'navigation.html' %}
+
+    <style>
+
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="about-section">
+  <h1>About</h1>
+  <p>वर्ष 1966 में स्थापित, जवाहर कृषक इंटर कॉलेज धनौरा टिकरी भारत के उत्तर प्रदेश राज्य के धनौरा गाँव में स्थित है। यह बागपत जिले के बिनोली ब्लॉक के धनौरा क्षेत्र में स्थित है। जिनका पिन कोड 250622 है।
+J.K.I.C उच्च माध्यमिक (6-12) स्तर की शिक्षा प्रदान करता है और इसका प्रबंधन निजी सहायता प्राप्त संगठन द्वारा किया जा रहा है।
+शिक्षा का माध्यम हिंदी भाषा है और स्कूल सह-शैक्षिक है।
+उच्च माध्यमिक स्तर के लिए स्कूल उत्तर प्रदेश राज्य बोर्ड से संबद्ध है।</p>
+    <p>स्कूल एक शांत एवं स्वच्छ हरे-भरे वातावरण में गाँव के बाहर स्थित हैं और उसके पीछे तीरंदाजी का मैदान है।</p>
+
+</div>
+
+<h1 style="text-align:center"><b>Principal</h1></b>
+<div class="row" style="justify-content:center;" align="center">
+  <div class="column" style="align:center;">
+    <div class="card" style="align:center;">
+      <img src="static/images/3.jpg" alt="Principal" style="width:100%; height:300px;">
+      <div class="container-fluid">
+        <h2 class="mt-2">श्री लोकेश कुमार</h2>
+
+
+<p>मैं अभिभावकों को आश्वस्त करता हूँ कि हमारा कॉलेज छात्रों को तेजी से विकासशील दुनिया में गौरव के शिखर तक पहुंचने में मदद करेगा। हमारे उत्कृष्ट अनुभवी शिक्षकों के मार्गदर्शन में, छात्र सभी क्षेत्रों में अपना परचम लहराएगें ।</p>
+        <p>ameeshkavi911@gmail.com</p>
+        <p><button class="button">+91 9917233452</button></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<table class="table table-hover mt-2 ml-3 mr-3">
+    <tr bgcolor="skyblue">
+        <th>अध्यापक का नाम</th>
+        <th>पद</th>
+        <th>विषय</th>
+    </tr>
+
+    <tr>
+    <td>श्री लोकेश कुमार</td>
+        <td>प्रधानाचार्य</td>
+        <td>अंग्रेजी</td>
+    </tr>
+
+    <tr>
+    <td>श्री सुशील कुमार भारती</td>
+        <td>सह अध्यापक</td>
+        <td>हिन्दी</td>
+    </tr>
+    <tr>
+        <td>श्री राम कुमार</td>
+        <td>सह अध्यापक</td>
+        <td>अंग्रेजी</td>
+    </tr>
+    <tr>
+        <td>श्री बृजेश कुमार दुबे</td>
+        <td>सह अध्यापक</td>
+        <td>कला</td>
+    </tr>
+    <tr>
+        <td>श्री कपिल कुमार</td>
+        <td>सह अध्यापक</td>
+        <td>शारीरिक शिक्षा</td>
+    </tr>
+    <tr>
+        <td>श्री अनुज कुमार</td>
+        <td>सह अध्यापक</td>
+        <td>सामाजिक विज्ञान</td>
+    </tr>
+    <tr>
+        <td>श्री अमित कुमार</td>
+        <td>सह अध्यापक</td>
+        <td>जीव विज्ञान</td>
+    </tr>
+    <tr>
+        <td>श्री मोहित कुमार शर्मा</td>
+        <td>सह अध्यापक</td>
+        <td>गणित</td>
+    </tr>
+</tr>
+</table>
+{% include 'footer.html' %}
+</body>
+</html>
+

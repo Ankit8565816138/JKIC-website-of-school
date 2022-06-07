@@ -1,0 +1,8 @@
+.nav-item:hover
+{
+ background-color:darkblue;
+ font-color:black;
+ border-radius: 5px;
+ font-weight: bold;
+}
+
